@@ -12,14 +12,32 @@
     }
 
     header {
-      background-color: #004a99;
+      background-color: #003366;
       padding: 20px;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: start;
       color: white;
     }
 
+    header img {
+      height: 90px;
+      margin-right: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    header p {
+      margin-top: 5px;
+      color: #e69c4f;
+      font-weight: bold;
+    }
+
     nav {
-      background-color: #003366;
+      background-color: #004a99;
       display: flex;
       justify-content: center;
       gap: 20px;
@@ -55,8 +73,11 @@
 <body>
 
   <header>
-    <h1>NETMAX FIBER S.L.</h1>
-    <p>Conectamos Europa con precisión y pasión</p>
+    <img src="logo1.png" alt="Logotipo NETMAX FIBER" />
+    <div>
+      <h1>NETMAX FIBER S.L.</h1>
+      <p>Conectamos Europa con precisión y pasión</p>
+    </div>
   </header>
 
   <nav>
@@ -87,8 +108,8 @@
 
   <section id="contacto">
     <h2>Contacto</h2>
-    <p class="contacto">📧 info.netmaxfiber@gmail.com</p>
-    <p class="contacto">📞 +49 162 3446356</p>
+    <p class="contacto">📧 Email: <a href="mailto:info.netmaxfiber@gmail.com">info.netmaxfiber@gmail.com</a></p>
+    <p class="contacto">📞 Teléfono: <a href="tel:+491623446356">+49 162 3446356</a></p>
   </section>
 
 </body>
